@@ -21,6 +21,5 @@ HELP.md
 # Compiled class file
 *.class
 
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
+/.mvn/
 
