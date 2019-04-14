@@ -1,4 +1,4 @@
-package com.amarszalek.algorithms_comparison.domain.models;
+package com.amarszalek.algorithms_comparison.domain.models.sortAlgorithms;
 
 import com.amarszalek.algorithms_comparison.domain.interfaces.SortInterface;
 

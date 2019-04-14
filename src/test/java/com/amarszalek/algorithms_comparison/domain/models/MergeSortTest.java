@@ -1,20 +1,19 @@
 package com.amarszalek.algorithms_comparison.domain.models;
 
 import com.amarszalek.algorithms_comparison.domain.models.abstractTestClasses.AbstractSortTest;
-import com.amarszalek.algorithms_comparison.domain.models.sortAlgorithms.InsertionSort;
+import com.amarszalek.algorithms_comparison.domain.models.sortAlgorithms.MergeSort;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class InsertionSortTest extends AbstractSortTest {
+public class MergeSortTest extends AbstractSortTest {
 
     @Test
     public void shouldSortArray() {
         //given
-        InsertionSort insertionSort = new InsertionSort();
+        MergeSort mergeSort = new MergeSort();
         //when
-        int[] sortedArray = insertionSort.sort(super.getArrayToSort());
+        int[] sortedArray = mergeSort.sort(super.getArrayToSort());
         //then
         Assert.assertArrayEquals(super.getArrayExpected(), sortedArray);
     }
-
 }
