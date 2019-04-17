@@ -4,7 +4,6 @@ import com.amarszalek.algorithms_comparison.domain.models.CompareSortAlgorithms;
 import com.amarszalek.algorithms_comparison.domain.models.SortTimeResults;
 import com.amarszalek.algorithms_comparison.domain.utils.ArrayFactory;
 import lombok.AllArgsConstructor;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
@@ -26,8 +25,7 @@ public class SortFacade {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        SortTimeResults sortTimeResults = new SortTimeResults(algorithmsNamesAndDurations);
-        return sortTimeResults;
+        return new SortTimeResults(algorithmsNamesAndDurations);
     }
 
     private Map<String, Long> convertStringFutureMapToStringLongMap(Map<String,Future> algorithmsNamesAndFutureDurationsMap) {

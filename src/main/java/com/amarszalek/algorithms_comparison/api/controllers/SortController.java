@@ -18,7 +18,6 @@ public class SortController {
 
     @GetMapping("/{arraySize}")
     public ResponseEntity<SortTimeResults> sortArrayWithSpecifiedSize(@PathVariable int arraySize) {
-        SortTimeResults sortTimeResults = sortFacade.sortArrayByDifferentAlgorithms(arraySize);
-        return new ResponseEntity<SortTimeResults>(sortTimeResults, HttpStatus.OK);
+        return new ResponseEntity(sortFacade.sortArrayByDifferentAlgorithms(arraySize), HttpStatus.OK);
     }
 }
