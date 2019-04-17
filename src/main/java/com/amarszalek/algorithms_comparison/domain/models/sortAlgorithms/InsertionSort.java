@@ -17,4 +17,9 @@ public class InsertionSort implements SortInterface {
         }
         return arrayToSort;
     }
+
+    @Override
+    public String getAlgorithmName() {
+        return "insertion sort";
+    }
 }

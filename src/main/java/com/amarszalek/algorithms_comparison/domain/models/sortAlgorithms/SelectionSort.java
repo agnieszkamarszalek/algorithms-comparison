@@ -18,4 +18,9 @@ public class SelectionSort implements SortInterface {
         }
         return arrayToSort;
     }
+
+    @Override
+    public String getAlgorithmName() {
+        return "selection sort";
+    }
 }

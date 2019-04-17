@@ -10,6 +10,11 @@ public class MergeSort implements SortInterface {
         return arrayToSort;
     }
 
+    @Override
+    public String getAlgorithmName() {
+        return "merge sort";
+    }
+
     private void mergeSort(int[] arrayToSort, int minIndex, int maxIndex) {
         if(minIndex < maxIndex) {
             int midIndex = minIndex + (maxIndex - minIndex)/2;
