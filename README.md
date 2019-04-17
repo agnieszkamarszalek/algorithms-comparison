@@ -12,7 +12,8 @@ $ mvn clean install
 ```sh
 $ java -jar  target/algorithms_comparison-0.0.1-SNAPSHOT.jar
 ```
-<br></br>
-#####More information in swagger (localhost:8080/swagger-ui.html):
+<br />
+
+#### More information in swagger (localhost:8080/swagger-ui.html):
 
 ![swagger](img/swagger.png)
